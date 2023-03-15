@@ -1,6 +1,5 @@
 // Viết chương trình nhập vào một số nguyên từ 1 - 12 từ bàn phím và hiển thị ra tháng tương ứng với số đó (nhập vào số 1 thì sẽ hiển thị ra là "Tháng 1“).
 
-
 import java.util.Scanner;
 public class Bai4 {
     public static void main(String[] args) throws Exception {
