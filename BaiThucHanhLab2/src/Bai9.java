@@ -3,7 +3,28 @@
 import java.util.Scanner;
 public class Bai9 {
     public static void main(String[] argn) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Nhap vao chuoi bat ky: ");
+            String chuoi = sc.nextLine();
+            int so = 0;
+            int kytuthuong = 0;
+            int kytuhoa = 0;
+            for (int i = 0; i < chuoi.length(); i++) {
+                char n = chuoi.charAt(i);
+                if (Character.isDigit(n)) {
+                    so++;
+                }
+                else if (Character.isLowerCase(n)) {
+                    kytuthuong++;
+                }
+                else if (Character.isUpperCase(n)) { 
+                    kytuhoa++;
+                }
+            }
+            System.out.println("So ky tu so la: " +so);
+            System.out.println("So ky tu thuong la: " +kytuthuong);
+            System.out.println("So ky tu hoa la: " +kytuhoa);
+        }
+
     }
 }
