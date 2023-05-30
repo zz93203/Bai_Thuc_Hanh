@@ -6,16 +6,18 @@ public class App {
         int n;
         try {    
             do {
-                System.out.println("Nhap vao so luong cua mang: ");
+                System.out.print("Nhap vao so luong cua mang: ");
                 n = sc.nextInt();
             } while (n<0);
 
             int A[] = new int[n];
             for (int i=0; i<A.length; i++) {
-                System.out.println("Nhap vao cac gia tri cua mang: ");
+                System.out.print("Nhap gia tri thu "+(i+1)+" cua mang: ");
                 A[i] = sc.nextInt();
-            } 
-
+            }
+            
+            System.out.println();
+            System.out.println("Mang vua tao la: ");
             for (int i=0; i<A.length; i++) {
                 System.out.print(A[i] + "\t");
             }
